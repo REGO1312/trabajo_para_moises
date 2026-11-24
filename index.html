@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PUNTO Y VENTA | Carpintería y muebles personalizados</title>
+    <meta name="description" content="PUNTO Y VENTA: carpintería, muebles a medida y mobiliario de catálogo en madera.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Archivo:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>try { document.documentElement.dataset.theme = localStorage.getItem('pyv-theme') || 'dark' } catch (e) { }</script>
+</head>
+
+<body>
+    <a class="skip" href="#inicio">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+        <a href="#inicio" class="logo" aria-label="PUNTO Y VENTA, inicio">PUNTO<i>Y</i>VENTA</a>
+        <nav id="menu" aria-label="Principal">
+            <a href="#productos">Productos</a><a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a><a href="#contacto">Contacto</a>
+        </nav>
+        <button class="btn-line" id="themeBtn" type="button" aria-pressed="false">Modo rústico</button>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+            aria-label="Abrir menú"><span></span><span></span></button>
+    </header>
+
+    <main>
+        <!-- 01 INICIO -->
+        <section class="hero" id="inicio">
+            <div class="hero-img"><img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80"
+                    alt="Sala con mobiliario de madera hecho a medida"></div>
+            <div class="hero-txt">
+                <h1>Madera cortada a tu medida.</h1>
+                <p>Fabricamos closets, cocinas y escritorios a medida, y vendemos mesas, sillas y camas de catálogo.
+                    Cada pieza se diseña, se corta y se arma en nuestro taller.</p>
+                <div class="row">
+                    <a class="btn" href="#productos">EXPLORAR CATÁLOGO</a>
+                    <a class="btn btn-alt" href="#contacto" data-prefill="Cotización">SOLICITAR COTIZACIÓN</a>
+                </div>
+            </div>
+            <a class="scroll" href="#productos" aria-label="Desplazarse hacia abajo"><span></span></a>
+        </section>
+
+        <!-- 02 PRODUCTOS -->
+        <section class="sec" id="productos">
+            <div class="sec-head">
+                <h2>Productos</h2>
+                <p>Diseñado desde cero o listo del catálogo. Reserva cualquier producto por WhatsApp al +503 6973 2482.
+                </p>
+            </div>
+            <div class="filters" role="group" aria-label="Filtrar productos">
+                <button class="chip on" data-filter="all" type="button">Todos</button>
+                <button class="chip" data-filter="Personalizado" type="button">Muebles personalizados</button>
+                <button class="chip" data-filter="Catálogo" type="button">Catálogo de productos</button>
+            </div>
+            <div class="grid" id="grid" aria-live="polite"></div>
+        </section>
+
+        <!-- 03 NOSOTROS -->
+        <section class="sec alt" id="nosotros">
+            <div class="sec-head">
+                <h2>Nosotros</h2>
+            </div>
+            <div class="mv">
+                <article>
+                    <h3>Misión</h3>
+                    <p class="ph">Ser una empresa dedicada al diseño y fabricación de muebles de madera personalizado, adaptado a las necesidades, preferencias y espacios de cada cliente, ofreciendo soluciones funcionales y de calidad mediante asesoría, atención personalizada y el uso de canales digitales que faciliten el acceso a nuestros servicios..</p>
+                </article>
+                <article>
+                    <h3>Visión</h3>
+                    <p class="ph">Ser una empresa reconocida en el distrito de San Salvador como referente en el diseño y fabricación de muebles personalizados, destacándose por la calidad y atención de los  productos, la confianza de sus clientes y el crecimiento sostenible de sus operaciones.</p>
+                </article>
+            </div>
+            <h3 class="sub">Equipo directivo y organizacional</h3>
+            <div class="team">
+                <!-- Editar: foto (src), nombre, descripción -->
+                <article class="member">
+                    <div class="ph-img">Foto</div>
+                    <h4>[Nombre del colaborador]</h4><strong>Gerente general</strong>
+                    <p>[Texto provisional] Responsabilidades del puesto.</p>
+                </article>
+                <article class="member">
+                    <div class="ph-img">Foto</div>
+                    <h4>[Nombre del colaborador]</h4><strong>Administrador</strong>
+                    <p>[Texto provisional] Responsabilidades del puesto.</p>
+                </article>
+                <article class="member">
+                    <div class="ph-img">Foto</div>
+                    <h4>[Nombre del colaborador]</h4><strong>Jefe de producción</strong>
+                    <p>[Texto provisional] Responsabilidades del puesto.</p>
+                </article>
+                <article class="member">
+                    <div class="ph-img">Foto</div>
+                    <h4>[Nombre del colaborador]</h4><strong>Encargado de ventas</strong>
+                    <p>[Texto provisional] Responsabilidades del puesto.</p>
+                </article>
+                <article class="member">
+                    <div class="ph-img">Foto</div>
+                    <h4>[Nombre del colaborador]</h4><strong>Jefe de carpintería</strong>
+                    <p>[Texto provisional] Responsabilidades del puesto.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 04 SERVICIOS -->
+        <section class="sec" id="servicios">
+            <div class="sec-head">
+                <h2>Servicios</h2>
+                <p>Del primer boceto a la entrega e instalación.</p>
+            </div>
+            <div class="svc">
+                <article tabindex="0"><span class="n">01</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=800&q=70"
+                        alt="Carpintero trabajando la madera">
+                    <h3>Fabricación de muebles personalizados</h3>
+                    <p>Producimos el mueble que describes, con los materiales y acabados que elijas.</p>
+                </article>
+                <article tabindex="0"><span class="n">02</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=70"
+                        alt="Silla de diseño en madera">
+                    <h3>Diseño y planificación de mobiliario</h3>
+                    <p>Medimos tu espacio y proponemos distribución, planos y proporciones.</p>
+                </article>
+                <article tabindex="0"><span class="n">03</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=70"
+                        alt="Cocina integral a medida">
+                    <h3>Elaboración de muebles a medida</h3>
+                    <p>Piezas que encajan al centímetro en nichos, esquinas y espacios difíciles.</p>
+                </article>
+                <article tabindex="0"><span class="n">04</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=70"
+                        alt="Mueble de madera restaurado">
+                    <h3>Restauración y reparación de muebles</h3>
+                    <p>Recuperamos estructura, superficie y herrajes de muebles que vale la pena conservar.</p>
+                </article>
+                <article tabindex="0"><span class="n">05</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=70"
+                        alt="Sofá y mesa de catálogo">
+                    <h3>Comercialización de muebles predeterminados</h3>
+                    <p>Mesas, sillas, camas y más, disponibles para compra directa.</p>
+                </article>
+                <article tabindex="0"><span class="n">06</span><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=800&q=70"
+                        alt="Muestras de maderas y acabados">
+                    <h3>Asesoría en materiales y acabados</h3>
+                    <p>Te ayudamos a comparar maderas, tableros, barnices y herrajes según uso y presupuesto.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 05 CONTACTO -->
+        <section class="sec alt" id="contacto">
+            <div class="sec-head">
+                <h2>Contacto</h2>
+                <p>Cuéntanos qué necesitas y te respondemos con una propuesta.</p>
+            </div>
+            <div class="contact">
+                <div class="info">
+                    <!-- Editar datos de contacto -->
+                    <dl>
+                        <dt>Teléfono</dt>
+                        <dd><a href="tel:+00000000000">+503 6973 2482</a></dd>
+                        <dt>WhatsApp</dt>
+                        <dd><a href="#" data-wa target="_blank" rel="noopener">+503 6973 2482</a></dd>
+                        <dt>Correo</dt>
+                        <dd><a href="mailto:correo@ejemplo.com">puntoyventa@gmail.com</a></dd>
+                        <dt>Dirección</dt>
+                        <dd>calle Plan del Pino, canton San Jose Cortez, San Savaldro</dd>
+                        <dt>Horarios</dt>
+                        <dd>Lunes a viernes, 7:00 a 5:30<br>Sábados, 8:00 a 3:00</dd>
+                        <dt>Redes</dt>
+                        <dd class="soc"><a href="#" target="_blank" rel="noopener">Facebook</a> <a href="#"
+                                target="_blank" rel="noopener">Instagram</a> <a href="#" target="_blank"
+                                rel="noopener">TikTok</a></dd>
+                    </dl>
+                </div>
+                <form id="form" novalidate>
+                    <label>Nombre completo<input name="nombre" type="text" autocomplete="name" required></label><small
+                        class="err" data-for="nombre"></small>
+                    <label>Correo electrónico<input name="email" type="email" autocomplete="email"
+                            required></label><small class="err" data-for="email"></small>
+                    <label>Número telefónico<input name="tel" type="tel" autocomplete="tel" required></label><small
+                        class="err" data-for="tel"></small>
+                    <label>Tipo de solicitud
+                        <select name="tipo" id="tipo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Cotización</option>
+                            <option>Mueble personalizado</option>
+                            <option>Producto de catálogo</option>
+                            <option>Restauración o reparación</option>
+                            <option>Asesoría</option>
+                            <option>Otro</option>
+                        </select></label><small class="err" data-for="tipo"></small>
+                    <label>Descripción del proyecto o consulta<textarea name="mensaje" id="mensaje" rows="5"
+                            required></textarea></label><small class="err" data-for="mensaje"></small>
+                    <div class="row fb"><button class="btn" type="submit">ENVIAR SOLICITUD</button><button
+                            class="btn btn-alt" type="button" id="waReserve">RESERVAR POR WHATSAPP</button></div>
+                    <p class="status" id="status" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="foot-grid">
+            <div><a href="#inicio" class="logo">PUNTO<i>Y</i>VENTA</a>
+                <p>Carpintería, muebles a medida y mobiliario de catálogo.</p>
+            </div>
+            <nav aria-label="Pie de página"><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a
+                    href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
+            <div>
+                <p>WhatsApp: +503 6973 2482<br>correo@puntoyventa.com<br>calle Plan del Pino, canton San Jose Cortez, San Savaldor</p>
+                <p class="soc"><a href="#" target="_blank" rel="noopener">Facebook</a> <a href="#" target="_blank"
+                        rel="noopener">Instagram</a> <a href="#" target="_blank" rel="noopener">TikTok</a></p>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">© 2026 PUNTO Y VENTA. Todos los derechos reservados. Diseño y desarrollo: Rafael Enrique
+            González Oporto.</p>
+    </footer>
+
+    <a class="wa" href="#" data-wa target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">Reservar</a>
+    <button class="top" id="top" type="button" aria-label="Volver al inicio">Subir</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
